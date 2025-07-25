@@ -290,7 +290,7 @@ def diff_workflow_files(w1, w2):
 
     with open(w1) as f1:
         with open(w2) as f2:
-            parser = yaml.YAML(typ="safe", pure=True)
+            parser = yaml.YAML(typ="base", pure=True)
             w1 = parser.load(f1)
             w2 = parser.load(f2)
 
